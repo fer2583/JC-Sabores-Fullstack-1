@@ -14,3 +14,41 @@ Verde Oscuro	#006400
 Gris Oscuro	#2F4F4F
 Borgoña	#800020 */
 
+.logo-header {
+    width: 50%;
+    height: 50px;
+}
+
+header {
+    background-color: white;
+    box-shadow: 1.5px 1.5px 4px #b3b3b3;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    transition: 5 0ms all ease-in-out;
+}
+
+header nav {
+    color: #b3b3b3;
+    font-weight: normal;
+    margin-left: 1em;
+    transition: all 300ms ease-in-out;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+.card-menus {
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px lightgray;
+}
