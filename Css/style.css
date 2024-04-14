@@ -45,8 +45,71 @@ header nav {
 nav {
     display: flex;
     justify-content: center;
-    margin-top: 200px;
+    gap: 20px;
 }
+
+nav a {
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    color: black;
+    padding: 5px 5px; 
+    transition: background-color 0.3s ease; /* transición lenta para el cambio de color de fondo, podemos cambiar la velocidad cualqueir cosa */
+}
+
+nav a:hover {
+   background-color: #FFD700;
+   border-radius: 10px;    
+}
+
+.banner {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    opacity: 80%;
+}
+
+.tituloBanner{
+    color: white;
+    font-size: 4.5rem;
+    text-align: center;
+    top: -600px;
+    position: relative;
+    text-shadow:  7px 8px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btnBanner{
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -32rem;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFD700;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btnBanner:hover {
+   border: solid 1px black;
+   cursor: pointer;
+}
+
+.volver {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FFD700;
+    padding: 10px;
+    border-radius: 50%; 
+    transition: background-color 0.3s;
+}
+
+.volver:hover {
+    background-color: #302a1f;
+}
+
 .card-menus {
     padding: 40px 20px;
     border-radius: 8px;
