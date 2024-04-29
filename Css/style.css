@@ -51,7 +51,10 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
+<<<<<<< HEAD
     list-style: none;
+=======
+>>>>>>> 2ba86f9690434e4a21806cf1bc6daba788c00fe3
 }
 
 nav a {
@@ -68,7 +71,10 @@ nav a:hover {
    border-radius: 10px;    
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2ba86f9690434e4a21806cf1bc6daba788c00fe3
 .banner {
     width: 100%; 
     height: auto; 
