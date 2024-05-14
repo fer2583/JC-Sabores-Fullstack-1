@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Postres</title>
-    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/Postres.css">
+    <script src="Js/jquery-3.4.1.min.js"></script>
+    <script src="Js/main.js"></script>
 </head>
 <body>
 
-    <header>
+    <header class="encabezado">
         <a href="Index.html">
-            <img src="img/logo-header.svg" alt="Logo">
+            <img src="img/Logos/logo-header.svg" alt="Logo de JC Sabores FullStack">
         </a>
+
     <nav>
         <li><a href="menu.html">Menú</a></li>
         <li><a href="#promociones">Promociones</a></li>
@@ -20,73 +23,79 @@
         <li><a href="contactanos.html">Contactanos</a></li>
     </nav>
 </header>
-
+<div id="burger">
+    <div class="barra superior"></div>
+    <div class="barra media"></div>
+    <div class="barra inferior"></div>
+</div>
+<div class="menu">
+    <nav>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="#promociones">Promociones</a></li>
+        <li><a href="#realiza_tu_pedido">Realiza tu Pedido</a></li>
+        <li><a href="#quienes_somos">Quiénes Somos</a></li>
+        <li><a href="contactanos.html">Contactanos</a></li>
+    </nav>
+</div>
     <h1>Seleccion dulce</h1>
     <ul>
         <li>
             <br>
             <h3>Lemon Pie</h3>
-<<<<<<< HEAD
-            <img src="img/postres/300x300/lemon-pie.png" alt="Lemon Pie">
-            <p>Delicioso pie de limón con una base de masa quebrada y un relleno suave y ácido de limón, cubierto con merengue.</p>
-            <p>Precio: $<?= rand(2501, 4999) ?></p>
-=======
-            <img src="./img/postres/Lemon-Pie.jpg" alt="30">
+            <img src="./img/postres/300x300/lemon-pie-300x300.png" alt="30">
             <p>El lemon pie es más bien una tarta, es decir, una base de masa y un relleno. Como su nombre indica está hecha con limón, más bien con el zumo del limón, azúcar y huevos. Todo ello mezclado hace el famoso custard, el relleno cremoso amarillo que es tan típico de la tarta de limón.</p>
->>>>>>> f66025d2b27b16a9db1f0d7e7d630d8164754cad
         </li>
         <li>
             <br>
             <h3>Helado</h3>
-<<<<<<< HEAD
-            <img src="img/postres/300x300/helado.png" alt="Helado">
-            <p>Selección de helados artesanales en variedad de sabores, acompañados de toppings y salsas a elección.</p>
-            <p>Precio: $<?= rand(2501, 4999) ?></p>
-=======
             <br>
-            <img src="./img/postres/helado.jpg" alt="30">
+            <img src="./img/postres/300x300/helado-300x300.png" alt="30">
             <p>El helado o crema helada es un alimento congelado que por lo general se hace de productos lácteos tales como leche o crema. Consultar disponibilidad de gustos.</p>
->>>>>>> f66025d2b27b16a9db1f0d7e7d630d8164754cad
         </li>
         <li>
             <br>
             <h3>Cheesecake</h3>
-<<<<<<< HEAD
-            <img src="img/postres/300x300/cheesecake.png" alt="Cheesecake">
+            <img src="img/postres/300x300/cheesecake-300x300.png" alt="Cheesecake">
             <p>Clásico cheesecake con base de galleta, relleno cremoso y topping de frutos rojos o salsa de frutas a elección.</p>
             <p>Precio: $<?= rand(2501, 4999) ?></p>
         </li>
         <li>
             <h3>Torta de Manzana</h3>
-            <img src="img/postres/300x300/torta-manzana.png" alt="Torta de Manzana">
+            <img src="img/postres/300x300/torta-manzana-300x300.png" alt="Torta de Manzana">
             <p>Deliciosa torta de manzana casera con una base crujiente y un relleno suave y aromático.</p>
             <p>Precio: $<?= rand(2501, 4999) ?></p>
-=======
-            <br>
-            <img src="./img/postres/cheesecake.jpg" alt="30">
-            <p>El Cheesecake o tarta de queso es un postre muy popular desde el siglo XX hecho a base de ricota, requesón, queso quark, azúcar y algunas veces otros ingredientes, tales como: huevos, crema de leche o nata, harina, patata, almendras o frutas.</p>
-        </li>
-        <li>
-            <br>
-            <h3>Torta de Manza</h3>
-            <br>
-            <img src="./img/postres/torta-de-manzana.jpg" alt="30">
-            <p>Es una tarta de fruta elaborada con una masa recubierta de manzana que puede ser troceada o en compota</p>
->>>>>>> f66025d2b27b16a9db1f0d7e7d630d8164754cad
         </li>
         <li>
             <br>
             <h3>Flan con Dulce de Leche y Crema</h3>
-<<<<<<< HEAD
-            <img src="img/postres/300x300/flan.png" alt="Flan con Dulce de Leche y Crema">
+            <img src="img/postres/300x300/flan-300x300.png" alt="Flan con Dulce de Leche y Crema">
             <p>Clásico flan casero bañado en dulce de leche y acompañado de crema chantilly.</p>
             <p>Precio: $<?= rand(2501, 4999) ?></p>
-=======
-            <br>
-            <img src="./img/postres/flan.jpg" alt="30">
-            <p>El flan​ es un postre de origen francés​ elaborado con una natilla teniendo como ingredientes principales yemas de huevos, un poco de clara a veces, leche entera y azúcar que luego es refrigerado para obtener una textura cremosa y gelatinosa. Agregando dulce de leche por encima y crema.</p>
->>>>>>> f66025d2b27b16a9db1f0d7e7d630d8164754cad
         </li>
     </ul>
+
+    <footer>
+        <a href="https://www.instagram.com/">
+            <img src="img/Redes Sociales/instagram.png" alt="Nuestro Instagram">
+        </a>
+
+        
+        <div id="contacto" class="contacto">
+
+        </div>
+
+        <div class="politicas-de-privacidad">
+            <ul>
+                <li><a href="contactanos.html">Contactanos</a></li>
+                <li><a href="Politicas-y-privacidad.html">Politicas de Privacidad</a></li>
+                <li><a href="https://autogestion.produccion.gob.ar/consumidores">Defensa al Consumidor</a></li>
+            </ul>
+
+            
+        </div>
+    </footer>
+    <footer>
+        <p>Derechos Reservados &copy; 2024 | JC Sabores FullStack - | Camila Palavecino | Fernando Martinez | Gabriel Ance | Joaquín Guzmán</p>
+    </footer>
 </body>
 </html>

@@ -8,15 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=League+Spartan:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/Index.css">
+    <script src="Js/jquery-3.4.1.min.js"></script>
+    <script src="Js/main.js"></script>
 </head>
 <body>
 
-    <header>
+    <header class="encabezado">
         <a href="Index.html">
-            <img src="img/logo-header.svg" alt="Logo">
-<<<<<<< HEAD
+            <img src="img/Logos/logo-header.svg" alt="Logo de JC Sabores FullStack">
         </a>
+
     <nav>
         <li><a href="menu.html">Menú</a></li>
         <li><a href="#promociones">Promociones</a></li>
@@ -25,92 +27,90 @@
         <li><a href="contactanos.html">Contactanos</a></li>
     </nav>
 </header>
+<div id="burger">
+    <div class="barra superior"></div>
+    <div class="barra media"></div>
+    <div class="barra inferior"></div>
+</div>
+<div class="menu">
+    <nav>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="#promociones">Promociones</a></li>
+        <li><a href="#realiza_tu_pedido">Realiza tu Pedido</a></li>
+        <li><a href="#quienes_somos">Quiénes Somos</a></li>
+        <li><a href="contactanos.html">Contactanos</a></li>
+    </nav>
+</div>
 
 <img class="banner" src="img/Banner/Banner 1.jpg" alt="Banner">
 <h2 class="tituloBanner">Descubrí Nuestras Especialidades</h2>
-<button class="btnBanner">Ver Menú</button>
-=======
-        <nav>
-            <a href="menu.html">Menú</a>
-            <a href="#promociones">Promociones</a>
-            <a href="#realiza_tu_pedido">Realiza tu Pedido</a>
-            <a href="#quienes_somos">Quiénes Somos</a>
-            <a href="contactanos.html">Contactanos</a>
-        </nav>
-    </header> 
+<button class="btnBanner" id="verMenuBtn">Ver Menú</button>
 
-    <img src="/JC-Sabores-Fullstack/img/empty-cafe-bar-interior-design-with-artistic-drawing-back-wine-bottles-light-bulbs-hanging-from-ceiling.jpg" alt="Banner" class="banner">
-    <h2 class="tituloBanner">Descubrí Nuestras Especialidades</h2>
-    <button class="btnBanner">Ver Menú</button>
->>>>>>> 2ba86f9690434e4a21806cf1bc6daba788c00fe3
-
-    <div class="aside-content">
-        <aside>
-            <h2>Descubrí Nuestras Especialidades</h2>
+<section>
+<div class="promociones">
+    <div class="aside-container">
+        <aside class="aside-suscripción">
+        <h2>Suscribite para recibir nuestras mejores promociones</h2>
+        <p>¡No te pierdas y aprovecha nuestras ofertas especiales y descuentos exclusivos! <br>
+            Suscribite a nuestra lista de correo y recibi nuestras promociones directamente en tu bandeja de entrada.</p>
+        <form action="procesar suscripción.php" method="post">
+            <label for="email">Correo Electronico:</label>
+            <br>
+            <input type="email" name="email" id="email">
+            <br>
+            <button type="submit">Obtener Beneficios</button>
+        </form>
+        <div class="direccion"> 
+            <h2>¿Donde encontrarnos?</h2> 
+            <!--Acá usemos algún iframe de Google Maps-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210239.96408740184!2d-58.6849443711834!3d-34.57888075164877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1711726519460!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </aside>
+</div>
+    <div class="carrousel">                
+        <h2>Promociones</h2> 
+        <!-- Contenido de Promociones va acá-->
+        <p>¡Aprovecha nuestras promociones exclusivas y ahorra en tus pedidos favoritos!</p>
+        <div class="carrousel-imagenes">
             <ul>
-                <li>
-                    <h3>Plato del Día</h3>
-                    <p>Nuestro chef te sorprende cada día con una creación única y deliciosa. ¡No te lo pierdas!</p>
-                </li>
-                <li>
-                    <h3>Postre Irresistible</h3>
-                    <p>Prueba nuestro postre estrella, una delicia que endulzará tu paladar y te va dejar con ganas de más.</p>
-                </li>
-                <li>
-                    <h3>Cóctel Especial</h3>
-                    <p>Refrescá tu día con nuestro cóctel especial, una combinación perfecta de sabores y aromas.</p>
-                </li>
+                <li><img src="img/Promos/Flyer Cerveza.png" alt="Promocion de Cerveza JC Sabores FullStack"></li>
+                <li><img src="img/Promos/Flyer Postres.png" alt="Promoción de Postres JC Sabores FullStack"></li>
+                <li><img src="img/Promos/Flyer Hamburguesa.png" alt="Promoción de Hamburguesa JC Sabores FullStack"></li>
             </ul>
-        </aside>
+        </div>
+        
+    </div>
+</div>
+</section>
         <main>
-            <section id="promociones">
-                <h2>Promociones</h2> 
-                <!-- Contenido de Promociones va acá-->
-<<<<<<< HEAD
-                <p>¡Aprovecha nuestras promociones exclusivas y ahorra en tus pedidos favoritos!</p>
-                <div class="carrusel-promociones">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-=======
-               <p>¡Aprovecha nuestras promociones exclusivas y ahorra en tus pedidos favoritos!</p>
->>>>>>> 2ba86f9690434e4a21806cf1bc6daba788c00fe3
-                <ul>
-                    <li><strong>Descuento en Efectivo:</strong> Paga en efectivo y obtene un descuento especial del 20% en tu total.</li>
-                    <li><strong>Happy Hour de Mediodía:</strong> ¡Disfruta de un 30% de descuento en todos los platos durante el almuerzo de lunes a viernes!</li>
-                    <li><strong>Noche de Familia Feliz:</strong> Los miércoles, trae a toda la familia y recibe un 35% de descuento en tu cuenta total.</li>
-                    <li><strong>Oferta de Cumpleaños:</strong> ¡Celebra tu cumpleaños con nosotros y recibe un 50% de descuento en tu comida!</li>
-                </ul>
-            </section>
-           <section>   
-           <h2><img src="./img/Flyer Cerveza.png" alt="30" height="700px" width="550px"></h2>
-           <h2><img src="./img/Flyer Hamburguesa.png" alt="30" height="700px" width="550px"></h2>
-           <h2> <img src="./img/Flyer Postres.png" alt="30" height="700px" width="550px"></h2>
 
-           </section>
             <section id="realiza_tu_pedido">
                 <div class="col-pedido">
                     <h2>¡Realiza tu pedido!</h2>
                     <p>¡Realiza tu pedido!</p>
                     <a href="https://wa.me/5491234567890" target="_blank">
-                        <img id="ico-log-pedido"  src="img/ico_whatsapp_pedidos.gif" alt="Logo de WhatsApp">
+                        <img id="ico-log-pedido"  src="img/Redes Sociales/ico_whatsapp_pedidos.gif" alt="Logo de WhatsApp">
                     </a>
                 </div>
                 <div class="col-reserva">        
                     <h2>¡Realiza tu reserva!</h2>
                     <p>¡Realiza tu pedido!</p>
                     <a href="https://wa.me/5491234567890" target="_blank">
-                        <img id="ico-log-reserva" src="img/ico_whatsapp_reservas.gif" alt="Logo de WhatsApp">
+                        <img id="ico-log-reserva" src="img/Redes Sociales/ico_whatsapp_reservas.gif" alt="Logo de WhatsApp">
                     </a></div>
             </section>
 
             <section id="quienes_somos">
                 <h2>Quiénes Somos</h2>
-                <p>Nosotros somos Camila,Fernando, Gabriel y Joaquin, un equipo apasionado por la comida y la tecnología. Nos unimos para crear JC Sabores FullStack con la visión de ofrecer una experiencia gastronómica única que combine la excelencia culinaria con la innovación tecnológica.</p>
-                <p>Nuestra misión es llevar los sabores más deliciosos a tu mesa, utilizando ingredientes frescos y de alta calidad en cada uno de nuestros platos. Nos esforzamos por brindar un servicio excepcional y crear un ambiente acogedor donde nuestros clientes puedan disfrutar de momentos inolvidables con amigos y seres queridos.</p>
-                <p>En JC Sabores FullStack, no solo nos dedicamos a ofrecer deliciosas comidas y bebidas, sino que también nos apasiona la tecnología y la creatividad. Estamos constantemente explorando nuevas formas de mejorar y enriquecer la experiencia de nuestros clientes a través de la innovación en el mundo culinario y digital.</p>
+                <div class="nosotros-somos">
+
+                    <img class="img-quienes-somos" src="img/Banner/restaurant-interior.jpg" alt="">
+                    <p>Nosotros somos Camila, Fernando, Gabriel y Joaquín, un equipo apasionado por la comida y la tecnología. Nos unimos para crear JC Sabores FullStack con la visión de ofrecer una experiencia gastronómica única que combine la excelencia culinaria con la innovación tecnológica.
+                    <br>
+                    Nuestra misión es llevar los sabores más deliciosos a tu mesa, utilizando ingredientes frescos y de alta calidad en cada uno de nuestros platos. Nos esforzamos por brindar un servicio excepcional y crear un ambiente acogedor donde nuestros clientes puedan disfrutar de momentos inolvidables con amigos y seres queridos.
+                        <br>
+                    En JC Sabores FullStack, no solo nos dedicamos a ofrecer deliciosas comidas y bebidas, sino que también nos apasiona la tecnología y la creatividad. Estamos constantemente explorando nuevas formas de mejorar y enriquecer la experiencia de nuestros clientes a través de la innovación en el mundo culinario y digital.</p>
+                </div>
             </section>
         </main>
     </div>
@@ -119,13 +119,9 @@
 
     <footer>
         <a href="https://www.instagram.com/">
-            <img src="img/instagram.png" alt="Nuestro Instagram">
+            <img src="img/Redes Sociales/instagram.png" alt="Nuestro Instagram">
         </a>
-        <div class="direccion"> 
-            <h2>Dirección</h2> 
-            <!--Acá usemos algún iframe de Google Maps-->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210239.96408740184!2d-58.6849443711834!3d-34.57888075164877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1711726519460!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+
         
         <div id="contacto" class="contacto">
 
